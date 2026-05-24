@@ -2,12 +2,12 @@
 
 return [
     '404' => [
-        'title' => 'Sivua ei löytynyt',
-        'message' => 'Valitettavasti etsimääsi sivua ei löytynyt.',
-        'return_home' => 'Takaisin etusivulle',
+        'title' => 'Page Not Found',
+        'message' => 'Sorry, the page you are looking for could not be found.',
+        'return_home' => 'Back to Home',
     ],
     '500' => [
-        'title' => 'Palvelinvirhe',
-        'message' => 'Hups! Jokin meni vikaan meidän puolella. Yritä myöhemmin uudelleen.',
+        'title' => 'Server Error',
+        'message' => 'Whoops, something went wrong on our end. Please try again later.',
     ],
 ];

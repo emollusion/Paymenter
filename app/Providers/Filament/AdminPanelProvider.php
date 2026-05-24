@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\Actions\Auth\Logout;
 use App\Http\Middleware\ImpersonateMiddleware;
 use App\Http\Middleware\LockSession;
 use App\Http\Middleware\ResolveUserSession;
@@ -14,6 +13,7 @@ use Filament\Facades\Filament;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Navigation\MenuItem;
 use Filament\Notifications\Livewire\Notifications;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -61,18 +61,15 @@ class AdminPanelProvider extends PanelProvider
             ->discoverPages(in: app_path('Admin/Pages'), for: 'App\\Admin\\Pages')
             ->discoverClusters(in: app_path('Admin/Clusters'), for: 'App\\Admin\\Clusters')
             ->userMenuItems([
-                'exit_admin' => Action::make('exit_admin')
+                'exit_admin' => MenuItem::make()
                     ->label('Exit Admin')
                     ->url('/')
                     ->icon('heroicon-s-arrow-uturn-left'),
                 'logout' => Action::make('logout')
                     ->label('Sign out')
                     ->icon(FilamentIcon::resolve(PanelsIconAlias::USER_MENU_LOGOUT_BUTTON) ?? Heroicon::ArrowLeftOnRectangle)
-                    ->action(function (Logout $logoutAction) {
-                        $logoutAction->execute();
-
-                        return redirect('/');
-                    }),
+                    ->url(fn () => $panel->getLogoutUrl())
+                    ->postToUrl(),
             ])
             ->discoverWidgets(in: app_path('Admin/Widgets'), for: 'App\\Admin\\Widgets')
             ->renderHook(

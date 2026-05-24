@@ -4,12 +4,12 @@ return [
     '' => '',
 
     'button' => [
-        'view' => 'Näytä',
-        'view_all' => 'Näytä kaikki',
+        'view' => 'View',
+        'view_all' => 'View All',
     ],
-    'confirm' => 'Vahvista',
-    'cancel' => 'Peruuta',
+    'confirm' => 'Confirm',
+    'cancel' => 'Cancel',
     'select' => [
-        'placeholder' => 'Valitse :name',
+        'placeholder' => 'Please select :name',
     ],
 ];

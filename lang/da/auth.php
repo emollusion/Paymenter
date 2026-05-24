@@ -13,43 +13,43 @@ return [
     |
     */
 
-    'failed' => 'Brugernavn eller kodeord findes ikke.',
-    'password' => 'Adgangskoden er forkert.',
-    'throttle' => 'For mange loginforsøg. Prøv igen om :seconds sekunder.',
+    'failed' => 'These credentials do not match our records.',
+    'password' => 'The provided password is incorrect.',
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
-    'sign_in' => 'Log ind',
-    'sign_in_title' => 'Log ind på din konto',
-    'or_sign_in_with' => 'Eller opret med',
-    'forgot_password' => 'Glemt dit kodeord?',
-    'dont_have_account' => 'Har du ikke en konto?',
-    'already_have_account' => 'Har du allerede en konto?',
+    'sign_in' => 'Sign in',
+    'sign_in_title' => 'Sign in to your account',
+    'or_sign_in_with' => 'Or sign in with',
+    'forgot_password' => 'Forgot your password?',
+    'dont_have_account' => 'Don\'t have an account?',
+    'already_have_account' => 'Already have an account?',
 
-    'sign_up' => 'Opret',
-    'sign_up_title' => 'Opret din konto',
+    'sign_up' => 'Sign up',
+    'sign_up_title' => 'Create your account',
 
-    'logout' => 'Log ud',
+    'logout' => 'Logout',
 
     'input' => [
         'email' => 'Email',
-        'email_label' => 'Email adresse',
-        'password' => 'Kodeord',
+        'email_label' => 'Email Address',
+        'password' => 'Password',
     ],
 
     'oauth' => [
-        'unverified_discord_account' => 'Din Discord konto er ikke verificeret hos os.',
-        'account_not_registered' => 'Du er ikke registreret på denne side.',
+        'unverified_discord_account' => 'Your Discord account is not verified.',
+        'account_not_registered' => 'You are not registered on this site.',
     ],
 
-    'reset_password' => 'Nulstil kodeord',
+    'reset_password' => 'Reset password',
 
-    'verify_2fa' => 'Verificer 2FA',
-    'verify' => 'Verificer',
+    'verify_2fa' => 'Verify 2FA',
+    'verify' => 'Verify',
 
     'verification' => [
-        'notice' => 'Bekræft din email adresse',
-        'sent' => 'Et nyt verificerings link er blevet sent til din email.',
-        'check_your_email' => 'Før du fortsætter, skal du tjekke din email for et verificerings link',
-        'not_received' => 'Hvis du ikke modtog et verificerings link, kan du anmode om en ny.',
-        'request_another' => 'Gensend verificerings link',
+        'notice' => 'Verify your email address',
+        'sent' => 'A new verification link has been sent to your email address.',
+        'check_your_email' => 'Before proceeding, please check your email for a verification link.',
+        'not_received' => 'If you did not receive the email you can request another verification email.',
+        'request_another' => 'Resend verification email',
     ],
 ];

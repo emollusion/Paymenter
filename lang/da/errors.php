@@ -2,12 +2,12 @@
 
 return [
     '404' => [
-        'title' => 'Hov! Jeg ved ikke hvordan du er endt her, men siden findes ikke',
-        'message' => 'Hov! Jeg ved ikke hvordan du er endt her, men siden findes ikke.',
-        'return_home' => 'Hjem',
+        'title' => 'Page Not Found',
+        'message' => 'Sorry, the page you are looking for could not be found.',
+        'return_home' => 'Back to Home',
     ],
     '500' => [
-        'title' => 'Der skete en fejl! Kontakt vores support for hjælp',
-        'message' => 'Der skete en fejl! Kontakt vores support for hjælp.',
+        'title' => 'Server Error',
+        'message' => 'Whoops, something went wrong on our end. Please try again later.',
     ],
 ];
